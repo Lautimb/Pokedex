@@ -22,7 +22,7 @@ export default function Home({pokemon}) {
               </div>
           </div>
           
-          <div className="row w-100 padding-home">
+          <div className="w-100 padding-home list-container">
             {pokemonList.map(( pokemon, index ) => {
               return(
                 <Card 
