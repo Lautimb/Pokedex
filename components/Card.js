@@ -4,7 +4,7 @@ export default function Card({name,image, number, id}){
     
     return(
         <>   
-            <div className="col">
+            <div className="col pe-1 ps-1 card-container">
                 <Link href={`/detail?id=${id}`}>
                     <div className="card m-1 mx-auto mb-5 bg-light" style={{width: '20em', cursor: 'pointer'}}>
                         <img src={ image } className="card-img-top m-auto " alt={name} style={{width: '170px'}}/>
