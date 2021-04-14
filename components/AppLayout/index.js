@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Header from '../Header'
+import Header from './Header'
+import Footer from './Footer'
 export default function AppLayout({children, title}){
     return (
         <>  
@@ -17,6 +18,8 @@ export default function AppLayout({children, title}){
             <main>
                 {children}
             </main>
+            <Footer/>
+
         </>
         
         

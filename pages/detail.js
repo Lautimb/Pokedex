@@ -1,5 +1,5 @@
 import AppLayout from '../components/AppLayout'
-import Detail from '../components/Detail'
+import DetailCard from '../components/DetailCard'
 import getPokemonById from '../services/getPokemonById'
 import Link from 'next/link'
 export default function detail({pokeman,id}){
@@ -14,7 +14,7 @@ export default function detail({pokeman,id}){
                     <a className="text-black"><i className="fas fa-chevron-left " style={{cursor: 'pointer'}}></i></a>
                 </div>
             </Link>
-            <Detail 
+            <DetailCard 
               abilities={pokeman.abilities} 
               height={pokeman.height} 
               image={pokeman.image} 

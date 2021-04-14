@@ -6,7 +6,7 @@ export default async function getAllPokemon(){
         const pokemon = results.map(( result, i ) => {
         const configIndex = ('00' + (i + 1)).slice(-3)
         const id = i + 1
-        const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${configIndex}.png`
+        const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${configIndex}.png`
           return {
             ...result,
             image,

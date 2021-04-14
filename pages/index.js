@@ -1,7 +1,7 @@
+import { useState } from 'react'
 import AppLayout from '../components/AppLayout'
 import Card from '../components/Card'
 import getAllPokemon from '../services/getAllPokemon'
-import { useState } from 'react'
 
 export default function Home({pokemon}) {
   const [ pokemonList , setPokemonList ] = useState(pokemon)
