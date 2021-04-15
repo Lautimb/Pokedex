@@ -1,3 +1,5 @@
+import colorsType from '../services/colorsType'
+
 export default async function getPokemonById(query){
     try {
         const id  = query.id
@@ -7,7 +9,7 @@ export default async function getPokemonById(query){
         const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${configIndex}.png`
         pokeman.image = image
         pokeman.number = configIndex
-  
+       
         return {
           props:{ 
             pokeman,

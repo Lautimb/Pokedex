@@ -1,4 +1,4 @@
-const stylesType = {
+const colors = {
     bug: '#729f3f',
     dark: '#707070',
     dragon: '#53a4cf',

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import stylesType from '../services/stylesType'
+import colorsType from '../services/colorsType'
 
 export default function DetailCard({name, image, height, weight, types, abilities, number}){
     return(
@@ -25,7 +25,15 @@ export default function DetailCard({name, image, height, weight, types, abilitie
                             </div>
                             <div className="col">
                                 <h6 className="fs-5">Type</h6>
-                                {types.map((type,i) => <div className="btn border border-secondary d-block me-auto ms-auto mb-1 mr-1 m-md-0 mb-md-1 p-1 w-75" key={i} style={{ backgroundColor: stylesType[type.type.name]}}>{type.type.name}</div>)}
+                                {types.map((type,i) => {
+                                    return(
+                                        <div key={i} 
+                                            className="btn border border-secondary d-block me-auto ms-auto mb-1 mr-1 m-md-0 mb-md-1 p-1 w-75" 
+                                            style={{ backgroundColor: colorsType[type.type.name], cursor:'inherit'}}>
+                                            {type.type.name}
+                                        </div>
+                                    )       
+                                })}
                             </div>
                         </div>
 
@@ -36,7 +44,7 @@ export default function DetailCard({name, image, height, weight, types, abilitie
                             </div>
                             <div className="col">
                                 <h6 className="fs-5">Abilities</h6>
-                                {abilities.map((ability,i) => <p className="fs-6 text-capitalize" key={i}>{ability.ability.name}</p>)}
+                                {abilities.map((ability,i) => <p key={i} className="fs-6 text-capitalize" >{ability.ability.name}</p>)}
                             </div>
                         </div>
 

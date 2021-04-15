@@ -16,7 +16,7 @@ export default function Home({pokemon}) {
       <AppLayout title = "Home | Poke-App">
        
           <div className="d-flex justify-content-center ">
-            <img className="w-100 banner" src="/banner.png" alt="banner" style={{maxWidth: '1200px'}}/>
+            <img className="w-100 banner" src="/banner.png" alt="banner" style={{maxWidth: '1200px', height: 'auto'}}/>
           </div>
           <div className="d-flex mt-3 justify-content-center">
               <input onChange={search} className="form-control search-input shadow" style={{width: '25em'}} type="text" name="search" placeholder="Search Pokemon"/>
