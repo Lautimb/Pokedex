@@ -1,5 +1,15 @@
 *,*::after,*::before{
-    box-sizing: border-box !important;
+    box-sizing: border-box !important;    
+}
+main{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color:#7fcaad;
+    font-family: 'Bangers';
+}
+header h1{
+    font-size: 50px;
 }
 .card-container{
     padding: 0;
@@ -26,8 +36,23 @@ a:hover{
     color: rgb(29, 29, 29);
     opacity: 0.7;
 }
+
+footer{
+    margin-top: 75px;
+    height: 175px;
+    background-color:rgb(29, 29, 29);
+    color: white;
+}
+.fa-github, .fa-linkedin, .fa-instagram{
+    font-size: 35px;
+    margin: 5px 20px;
+}
+.card-container{
+    margin-bottom: 250px;
+}
+
+
 @media (min-width: 576px) { 
-    
     .list-container{
         display: flex;
         flex-direction: row;
@@ -36,6 +61,12 @@ a:hover{
     .padding-home{
         padding: 50px 70px;
         
+    }
+}
+
+@media(max-width:576px){
+    .banner{
+        width: 500px;
     }
 }
 

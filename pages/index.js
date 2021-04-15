@@ -14,9 +14,12 @@ export default function Home({pokemon}) {
   return (
     <div className="container-fluid p-0">
       <AppLayout title = "Home | Poke-App">
-        <div className="padding-home">
+       
+          <div className="d-flex justify-content-center ">
+            <img className="w-100 banner" src="/banner.png" alt="banner" style={{maxWidth: '1200px'}}/>
+          </div>
           <div className="d-flex mt-3 justify-content-center">
-              <input onChange={search} className="form-control search-input" style={{width: '25em'}} type="text" name="search" placeholder="Search Pokemon"/>
+              <input onChange={search} className="form-control search-input shadow" style={{width: '25em'}} type="text" name="search" placeholder="Search Pokemon"/>
               <div className="position-relative mt-auto mb-auto search-icon">
                 <i className="fas fa-search"></i>
               </div>
@@ -36,7 +39,7 @@ export default function Home({pokemon}) {
             
             })}
           </div>
-        </div>
+        
       </AppLayout>
     </div>     
   )

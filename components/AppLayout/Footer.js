@@ -1,11 +1,18 @@
 export default function Footer() {
     return(
         <footer>
-            {/* <nav className="navbar navbar-light bg-danger bg-gradient">
-                <div className="container-fluid">
-                    <h4 className="navbar-brand" href="#">Developed by Lautaro Barandiaran</h4>
+            <div className="d-flex justify-content-center">
+                <div>
+                    <p className="mt-3 fs-4">Developed by Lautaro Barandiaran</p>
+                    <p className="fs-6 text-center">Full Stack Developer</p>
+
+                    <div className="d-flex justify-content-center">
+                        <i className="fab fa-github"></i>
+                        <i className="fab fa-linkedin"></i>
+                        <i className="fab fa-instagram"></i>                    
+                    </div>
                 </div>
-            </nav> */}
+            </div>
         </footer>
     )
 }

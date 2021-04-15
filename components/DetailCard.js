@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import stylesType from '../services/stylesType'
 
-export default function Detail({name, image, height, weight, types, abilities, number}){
+export default function DetailCard({name, image, height, weight, types, abilities, number}){
     return(
-        <div className="card mt-md-5 bg-light"  >
+        <div className="card mt-md-5 bg-light shadow-lg rounded"  >
             <div className="row w-100 m-0">
 
                 <div className="d-flex pt-3 justify-content-center">
@@ -18,14 +18,14 @@ export default function Detail({name, image, height, weight, types, abilities, n
                 <div className="col p-0 d-flex justify-content-start">
                     <div className="card-body pe-0 ps-0">
 
-                        <div className="d-flex text-center text-sm-start">
+                        <div className="d-flex text-center mt-md-3 text-sm-start">
                             <div className="col">
                                 <h6 className="fs-5">Height</h6>
                                 <p className="fs-6 text-capitalize" >{height}</p>
                             </div>
                             <div className="col">
                                 <h6 className="fs-5">Type</h6>
-                                {types.map((type,i) => <p className="fs-6 text-capitalize" key={i}>{type.type.name}</p>)}
+                                {types.map((type,i) => <div className="btn border border-secondary d-block me-auto ms-auto mb-1 mr-1 m-md-0 mb-md-1 p-1 w-75" key={i} style={{ backgroundColor: stylesType[type.type.name]}}>{type.type.name}</div>)}
                             </div>
                         </div>
 
