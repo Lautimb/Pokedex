@@ -53,7 +53,20 @@ i:hover{
     cursor: pointer;
     opacity: 0.7;
 }
+.inactive{
+    display:none;
+}
+.poke-notfound{
+    display:flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 70px auto 90px auto;
+}
 @media (min-width: 576px) { 
+    .poke-notfound{
+        width: 500px;
+        margin-top: auto;
+    }
     .card-container{
         margin-bottom: 250px;
     }
