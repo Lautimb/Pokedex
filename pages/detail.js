@@ -18,12 +18,12 @@ export default function detail({pokeman,id}){
 
             <DetailCard 
               abilities={pokeman.abilities} 
-              height={pokeman.height} 
+              height={pokeman.height * 10} 
               image={pokeman.image} 
               name={pokeman.name} 
               number={pokeman.number}
               types={pokeman.types}
-              weight={pokeman.weight}
+              weight={pokeman.weight / 10}
             />
         
             <Link href={`/detail?id=${ parseInt(id) < 151 ? parseInt(id) + 1 : 1 }`}>

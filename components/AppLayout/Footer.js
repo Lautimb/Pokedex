@@ -1,3 +1,5 @@
+import Link from 'next/link' 
+
 export default function Footer() {
     return(
         <footer>
@@ -7,9 +9,15 @@ export default function Footer() {
                     <p className="fs-6 text-center">Full Stack Developer</p>
 
                     <div className="d-flex justify-content-center">
-                        <i className="fab fa-github"></i>
-                        <i className="fab fa-linkedin"></i>
-                        <i className="fab fa-instagram"></i>                    
+                        <Link href="https://github.com/Lautimb">
+                            <a><i className="fab fa-github"></i></a>
+                        </Link>
+                        <Link href="https://linkedin.com/in/barandiaranlautaro/">
+                            <a><i className="fab fa-linkedin"></i></a>
+                        </Link>
+                        <Link href="https://instagram.com/barandiaranlautaro">
+                            <a><i className="fab fa-instagram"></i></a>                    
+                        </Link>
                     </div>
                 </div>
             </div>

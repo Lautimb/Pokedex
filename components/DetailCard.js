@@ -21,7 +21,7 @@ export default function DetailCard({name, image, height, weight, types, abilitie
                         <div className="d-flex text-center mt-md-3 text-sm-start">
                             <div className="col">
                                 <h6 className="fs-5">Height</h6>
-                                <p className="fs-6 text-capitalize" >{height}</p>
+                                <p className="fs-6 text-capitalize" >{height} cm</p>
                             </div>
                             <div className="col">
                                 <h6 className="fs-5">Type</h6>
@@ -32,7 +32,7 @@ export default function DetailCard({name, image, height, weight, types, abilitie
                         <div className="d-flex d-flex text-center text-sm-start">
                             <div className="col">
                                 <h6 className="fs-5">Weight</h6>
-                                <p className="fs-6 text-capitalize">{weight}</p>
+                                <p className="fs-6 text-capitalize">{weight} kg</p>
                             </div>
                             <div className="col">
                                 <h6 className="fs-5">Abilities</h6>
@@ -45,7 +45,7 @@ export default function DetailCard({name, image, height, weight, types, abilitie
 
                 <div className="text-center p-0 mb-3">    
                     <Link href="/">
-                        <a className="text-center mb-3 p-0 m-0">Go home</a>
+                        <a className="btn border border-dark p-2 text-center mb-3 p-0 m-0 go-home">Go home</a>
                     </Link>
                 </div>
 

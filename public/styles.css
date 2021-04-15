@@ -29,12 +29,8 @@ header h1{
 .fa-chevron-right:hover ,.fa-chevron-left:hover{
     opacity: 0.7;
 }
-a{
-    color: rgb(29, 29, 29);
-}
-a:hover{
-    color: rgb(29, 29, 29);
-    opacity: 0.7;
+a, a:visited, a:link{
+    color: inherit;
 }
 
 footer{
@@ -47,11 +43,18 @@ footer{
     margin: 5px 20px;
 }
 
-
 .card-container{
     margin-bottom: 50px;
 }
-
+.go-home:hover{
+    background-color: #7fcaad;
+    
+    
+}
+i:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
 @media (min-width: 576px) { 
     .card-container{
         margin-bottom: 250px;
