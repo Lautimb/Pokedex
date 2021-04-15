@@ -15,7 +15,9 @@ export default async function getAllPokemon(){
           }
         })
         return{
-          pokemon    
+          props:{
+            pokemon    
+          }
         }
       } catch (error) {
         console.log(error)
