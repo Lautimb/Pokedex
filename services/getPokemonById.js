@@ -1,5 +1,3 @@
-import colorsType from '../services/colorsType'
-
 export default async function getPokemonById(query){
     try {
         const id  = query.id

@@ -18,3 +18,5 @@ const colors = {
     steel: '#9eb7b',
     water: '#4592c4'
 }
+
+export default colors

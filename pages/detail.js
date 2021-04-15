@@ -2,8 +2,8 @@ import AppLayout from '../components/AppLayout'
 import DetailCard from '../components/DetailCard'
 import getPokemonById from '../services/getPokemonById'
 import Link from 'next/link'
-export default function detail({pokeman,id}){
 
+export default function detail({pokeman,id}){
   return (
     <div className="container-fluid p-0">
       <AppLayout title = "Detail | Poke-App">
