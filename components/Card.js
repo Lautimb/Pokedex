@@ -6,6 +6,7 @@ export default function Card({name,image, number, id}){
         <>   
             <div className='col pe-1 me-2 ms-2 ps-1'>
                 <Link href={`/detail?id=${id}`}>
+                    <a>
                     <div className='card m-1 mx-auto mt-4 mb-5 bg-light shadow ' style={{width: '20em', cursor: 'pointer'}}>
                         <img src={ image } className='card-img-top m-auto ' alt={name} style={{width: '250px'}}/>
                             <div className='card-body bg-white'>
@@ -13,6 +14,7 @@ export default function Card({name,image, number, id}){
                                 <p className='text-center'>#{number}</p>
                             </div>
                     </div>
+                    </a>
                 </Link>
             </div>
         </>       

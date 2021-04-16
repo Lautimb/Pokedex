@@ -4,7 +4,7 @@ export default function Footer() {
     return(
         <footer>
             <div className='d-flex justify-content-center'>
-                <div>
+                <div className='text-center'>
                     <p className='mt-3 fs-4'>Developed by Lautaro Barandiaran</p>
                     <p className='fs-6 text-center'>Full Stack Developer</p>
 

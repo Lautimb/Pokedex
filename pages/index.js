@@ -6,11 +6,11 @@ import getAllPokemon from '../services/getAllPokemon'
 export default function Home({pokemon}) {
 
   const [ pokemonList , setPokemonList ] = useState(pokemon)
-  const [ filterResult, setFilterResult ] = useState(true)
+  const [ filterResult, setFilterResult ] = useState(false)
 
   const search = (e) =>{
     const pokeFilter = pokemon.filter( pokeman => pokeman.name.includes(e.target.value.toLowerCase()))
-    setFilterResult(pokeFilter.length == 0 ? false : true)
+    setFilterResult(pokeFilter.length == 0)
     setPokemonList(pokeFilter) 
   }
   
@@ -44,8 +44,8 @@ export default function Home({pokemon}) {
             })}
           </div>
 
-          <div className={filterResult ? 'inactive' : 'poke-notfound'}>
-            <h2 className=''>POKE NOT FOUND, KEEP TRYING</h2>
+          <div className={ filterResult ? 'poke-notfound' : 'inactive' }>
+            <h2 className='text-center'>POKEMON NOT FOUND, KEEP TRYING</h2>
             <img src='pokenotfound.gif'></img>
           </div>
         
@@ -54,6 +54,6 @@ export default function Home({pokemon}) {
   )
 }
 
-export function getStaticProps(){
-  return  getAllPokemon()
+export async function getStaticProps(){
+  return  await getAllPokemon()
 }

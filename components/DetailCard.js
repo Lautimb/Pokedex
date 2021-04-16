@@ -28,7 +28,7 @@ export default function DetailCard({name, image, height, weight, types, abilitie
                                 {types.map((type,i) => {
                                     return(
                                         <div key={i} 
-                                            className='btn border border-secondary d-block me-auto ms-auto mb-1 mr-1 m-md-0 mb-md-1 p-1 w-75' 
+                                            className='btn border border-secondary d-block me-auto ms-auto mb-1 mr-1 m-md-0 mb-md-1 p-1 w-50' 
                                             style={{ backgroundColor: colors[type.type.name], cursor:'inherit'}}>
                                             {type.type.name}
                                         </div>
